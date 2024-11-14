@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu vaso - Planet Glass</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="c:\Users\LENOVO\Downloads\fondo_de_planet_glass_presentación-removebg-preview.png" alt="Planet Glass Logo" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="products.html">Contacto</a>
+                    <section id="custom">
+                        <h2>Personaliza tu vaso</h2>
+                        <form id="custom-form">
+                            <label for="design">Elige tu diseño:</label>
+                            <select id="design" name="design">
+                                <option value="clasico">Clásico</option>
+                                <option value="moderno">Moderno</option>
+                                <option value="personalizado">Personalizado</option>
+                            </select>
+                            <label for="quantity">Cantidad:</label>
+                            <div class="quantity-controls">
+                                <button type="button" id="decrease">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                                <button type="button" id="increase">+</button>
+                            </div>
+                            <button type="submit">Añadir al carrito</button>
+                        </form>
+                    </section>
+                    
+                    <footer>
+                        <p>&copy; 2024 Planet Glass. Todos los derechos reservados.</p>
+                    </footer>
+                    
+                    <script src="js/script.js"></script>
